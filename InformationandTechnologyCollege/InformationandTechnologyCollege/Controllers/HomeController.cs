@@ -15,7 +15,7 @@ namespace InformationandTechnologyCollege.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "The College of West Anglia is focused on developing your skills and talents to prepare you for work or university";
 
             return View();
         }
