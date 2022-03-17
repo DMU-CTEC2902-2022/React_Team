@@ -1,4 +1,8 @@
-﻿@{
+﻿@*
+     ctr k d (whole doc)
+    ctr k f (choosen text)
+     *@
+@{
     ViewBag.Title = "About";
 }
 <h2>@ViewBag.Title.</h2>
@@ -31,8 +35,12 @@
             Principal & Chief Executive
         </p>
     </div>
-    <div>
-
+    <div class="video">
+        <div class="video-settng">
+            <p>Please watch lovely video about our fantasic uni that lasted for</p><p id="duration"></p> <p>min</p>
+        </div>
+        <div id="video-placeholder"></div>
+        <script src="https://www.youtube.com/iframe_api"></script>
     </div>
 </main>
 <script src="~/Scripts/videoPlay.js"></script>
