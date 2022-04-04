@@ -4,16 +4,16 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Courses</h2>
 
-<ul>
-    @foreach (var course in @Model)
-    {
-
-        <li>
-            <a href="~/Course/Details/@course.CourseId">@course.Name</a>
-
-
-        </li>
-    }
-</ul>
+<div>
+    <h3>Course 1: Computer Science</h3>
+    <ul>
+        @foreach (var course1 in @Model)
+        {
+            <li>
+                <a href="~/Course/Details/@course1.CourseId">@course1.Name</a>
+            </li>
+        }
+    </ul>
+</div>

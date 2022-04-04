@@ -14,10 +14,10 @@ namespace InformationandTechnologyCollege.Controllers
         // GET: Course
         public ActionResult Index()
         {
-            return View(_courses);
+            return View(_courses1);
         }
 
-        private List<Course> _courses = new List<Course>()
+        private List<Course> _courses1 = new List<Course>()
         {
             new Course
             {
@@ -50,7 +50,7 @@ namespace InformationandTechnologyCollege.Controllers
         public ActionResult Details(int? id)
         {
             if (id == null) return new HttpNotFoundResult();
-            Course selectedCourse = _courses.First(p => p.CourseId == id);
+            Course selectedCourse = _courses1.First(p => p.CourseId == id);
 
             if (selectedCourse == null) return new HttpNotFoundResult();
             return View(selectedCourse);
@@ -60,7 +60,7 @@ namespace InformationandTechnologyCollege.Controllers
         public ActionResult Edit(int? id)
         {
             if (id == null) return new HttpNotFoundResult();
-            Course selectedCourse = _courses.First(p => p.CourseId == id);
+            Course selectedCourse = _courses1.First(p => p.CourseId == id);
             if (selectedCourse == null) return new HttpNotFoundResult();
             return View(selectedCourse);
         }
