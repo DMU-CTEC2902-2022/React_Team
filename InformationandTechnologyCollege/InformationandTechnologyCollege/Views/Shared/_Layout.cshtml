@@ -10,12 +10,13 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
         <div class="container">
+
             <div class="col-md-4">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" datatarget="#navbarSupportedContent" aria-controls="navbarSupportedContent" ariaexpanded="false" aria-label="Toggle navigation"></button>
                 @Html.ActionLink("Information and Technology College", "Index", "Home", new { area = "" }, new
                { @class = "navbar-brand" })
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="navbar-collapse collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav mr-auto">
                         <li class="nav-item">
@@ -33,15 +34,18 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-1">
+                <a href="~/Course/Index" class="btn btn-outline-info">Course</a>
+            </div>
+            <div class="col-md-3">
                 <form class="form-inline d-flex flex-row-reverse justify-content-around">
-                    <input class="form-control mr-sm-2 mr-auto" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2 mr-auto ms-3" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0 " type="submit">Search</button>
                 </form>
             </div>
-            
-            
-           
+            <div class="col-md-1">
+                <a href="#" class="btn btn-outline-secondary ms-3">Login</a>
+            </div>
         </div>
     </nav>
     <div class="container body-content">

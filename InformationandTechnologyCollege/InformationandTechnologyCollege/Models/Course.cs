@@ -8,13 +8,18 @@ namespace InformationandTechnologyCollege.Models
 {
     public class Course
     {
-        public int CourseId { get; set; }
         [Required]
+        public int CourseId { get; set; }
 
-        public string Name { get; set; }
+        [Required]
         [StringLength(100)]
+        public string Name { get; set; }
+        
 
         public string Description { get; set; }
+
+        [Required]
+        [StringLength(50)]
         public string Code { get; set; }
     }
 }
