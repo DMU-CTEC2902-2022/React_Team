@@ -1,7 +1,18 @@
-﻿body {
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
-   
+    background: url(https://cdn.britannica.com/85/13085-050-C2E88389/Corpus-Christi-College-University-of-Cambridge-England.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+   text-decoration: none;
 }
 
 /* Set padding to keep content from hitting the edges */
