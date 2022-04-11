@@ -1,0 +1,20 @@
+﻿@model List<InformationandTechnologyCollege.Models.Course>
+
+@{
+    ViewBag.Title = "Index2";
+}
+
+<h2>
+    Course 3: Cyber Security
+</h2>
+<div>
+    <ul>
+        @foreach (var course3 in @Model)
+        {
+            <li>
+                <a href="~/Course/Details/@course3.CourseId">@course3.Name</a>
+            </li>
+        }
+    </ul>
+</div>
+

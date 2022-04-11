@@ -4,15 +4,17 @@
     ViewBag.Title = "Index1";
 }
 
-<h2>No</h2>
-
+<h2>
+    Course 2: Software Engineering
+</h2>
 <div>
     <ul>
-        @foreach (var course1 in @Model)
+        @foreach (var course2 in @Model)
         {
             <li>
-                <a href="~/Course/Details/@course1.CourseId">@course1.Name</a>
+                <a href="~/Course/Details/@course2.CourseId">@course2.Name</a>
             </li>
         }
     </ul>
 </div>
+<h2>

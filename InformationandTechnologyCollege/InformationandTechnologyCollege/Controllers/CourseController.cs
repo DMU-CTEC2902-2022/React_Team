@@ -14,14 +14,19 @@ namespace InformationandTechnologyCollege.Controllers
         // GET: Course
         public ActionResult Index()
         {
-            return View(_courses1);
-
+                return View(_courses1); 
         }
 
         // GET: Course
         public ActionResult Index1()
         {
             return View(_courses2);
+        }
+
+        // GET: Course
+        public ActionResult Index2()
+        {
+            return View(_courses3);
         }
 
         private List<Course> _courses1 = new List<Course>()
@@ -90,40 +95,40 @@ namespace InformationandTechnologyCollege.Controllers
             new Course
             {
                 CourseId = 8,
-                Code = "COS1903",
-                Name = "Test1",
+                Code = "SE3906",
+                Name = "Interaction Design",
                 Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 
             },
             new Course
             {
                 CourseId = 9,
-                Code = "COS1920",
-                Name = "Database Management",
+                Code = "SE3410",
+                Name = "Web Application Penetration Testing",
                 Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 
             },
             new Course
             {
                 CourseId = 10,
-                Code = "COS2905",
-                Name = "Object Oriented Programming (Java)",
+                Code = "SE3406",
+                Name = "Fuzzy Logic & Knowledge Based Systems",
                 Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 
             },
             new Course
             {
                 CourseId = 11,
-                Code = "COS2910",
-                Name = "Database Management",
+                Code = "SE3613",
+                Name = "Data Mining",
                 Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 
             },
             new Course
             {
                 CourseId = 12,
-                Code = "COS3911",
-                Name = "Mobile Application",
+                Code = "SE3614",
+                Name = "Big Data & Business Models",
                 Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
 
             },
@@ -146,6 +151,67 @@ namespace InformationandTechnologyCollege.Controllers
 
         };
 
+        private List<Course> _courses3 = new List<Course>()
+        {
+            new Course
+            {
+                CourseId = 15,
+                Code = "SE3901",
+                Name = "C Programming",
+                Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+
+            },
+            new Course
+            {
+                CourseId = 16,
+                Code = "SE3902",
+                Name = "Computer Law and Cyber Security Management",
+                Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+
+            },
+            new Course
+            {
+                CourseId = 17,
+                Code = "SE3903",
+                Name = "Linux Security",
+                Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+
+            },
+            new Course
+            {
+                CourseId = 18,
+                Code = "SE3904",
+                Name = "Cyber Threat Intelligence and Incident Response",
+                Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+
+            },
+            new Course
+            {
+                CourseId = 19,
+                Code = "SE3905",
+                Name = "Malware Analysis",
+                Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+
+            },
+            new Course
+            {
+                CourseId = 20,
+                Code = "IMAT3611",
+                Name = "Computer Ethics and Privacy",
+                Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+
+            },
+            new Course
+            {
+                CourseId = 21,
+                Code = "COS3451",
+                Name = "Development Project",
+                Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+
+            }
+
+        };
+
         // GET: Details/id
         public ActionResult Details(int? id)
         {
@@ -158,10 +224,18 @@ namespace InformationandTechnologyCollege.Controllers
                 if (selectedCourse == null) return new HttpNotFoundResult();
                 return View(selectedCourse);
             }
-            else
+            else if (id >= 8 && id < 15)
             {
                 if (id == null) return new HttpNotFoundResult();
                 selectedCourse = _courses2.First(p => p.CourseId == id);
+
+                if (selectedCourse == null) return new HttpNotFoundResult();
+                return View(selectedCourse);
+            }
+            else
+            {
+                if (id == null) return new HttpNotFoundResult();
+                selectedCourse = _courses3.First(p => p.CourseId == id);
 
                 if (selectedCourse == null) return new HttpNotFoundResult();
                 return View(selectedCourse);
@@ -182,11 +256,19 @@ namespace InformationandTechnologyCollege.Controllers
                 return View(selectedCourse);
 
             }
-            else
+            else if (id >= 8 && id < 15)
             {
 
                 if (id == null) return new HttpNotFoundResult();
                 selectedCourse = _courses2.First(p => p.CourseId == id);
+
+                if (selectedCourse == null) return new HttpNotFoundResult();
+                return View(selectedCourse);
+            }
+            else 
+            {
+                if (id == null) return new HttpNotFoundResult();
+                selectedCourse = _courses3.First(p => p.CourseId == id);
 
                 if (selectedCourse == null) return new HttpNotFoundResult();
                 return View(selectedCourse);
