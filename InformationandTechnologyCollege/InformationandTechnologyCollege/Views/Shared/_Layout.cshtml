@@ -35,7 +35,14 @@
                 </div>
             </div>
             <div class="col-md-1">
-                <a href="~/Course/Index" class="btn btn-outline-info">Course</a>
+                <div class="dropdown">
+                    <button class="dropbtn btn btn-outline-info">Course</button>
+                    <div class="dropdown-content">
+                        <a href="~/Course/Index">Link 1</a>
+                        <a href="~/Course/Index1">Link 2</a>
+                        <a href="~/Course/Index2">Link 3</a>
+                    </div>
+                </div>
             </div>
             <div class="col-md-3">
                 <form class="form-inline d-flex flex-row-reverse justify-content-around">
@@ -52,7 +59,7 @@
         @RenderBody()
         <hr />
         <footer >
-            <p  class="fw-bold">&copy; @DateTime.Now.Year - Information and Technology College / Team React Project</p>
+            <p  class="fw-bold bg-info px-1 py-1 rounded">&copy; @DateTime.Now.Year - Information and Technology College / Team React Project</p>
         </footer>
     </div>
     @Scripts.Render("~/bundles/jquery")
