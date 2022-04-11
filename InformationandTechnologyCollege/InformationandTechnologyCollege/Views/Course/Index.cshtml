@@ -3,16 +3,17 @@
 @{
     ViewBag.Title = "Index";
 }
+<section class="bg-white mt-5 px-3 py-3">
+    <h2 class="bg-secondary bg-opacity-10 px-2 py-2 title rounded-2">Course 1: Computer Science</h2>
 
-<h2>Course 1: Computer Science</h2>
-
-<div>
-    <ul>
-        @foreach (var course1 in @Model)
-        {
-            <li>
-                <a href="~/Course/Details/@course1.CourseId">@course1.Name</a>
-            </li>
-        }
-    </ul>
-</div>
+    <div>
+        <ul>
+            @foreach (var course1 in @Model)
+            {
+                <li>
+                    <a href="~/Course/Details/@course1.CourseId">@course1.Name</a>
+                </li>
+            }
+        </ul>
+    </div>
+</section>
