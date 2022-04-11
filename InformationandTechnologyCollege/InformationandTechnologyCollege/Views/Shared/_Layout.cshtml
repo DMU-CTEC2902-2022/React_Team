@@ -44,15 +44,15 @@
                 </form>
             </div>
             <div class="col-md-1">
-                <a href="#" class="btn btn-outline-secondary ms-3">Login</a>
+                <a href="~/Account/Login" class="btn btn-outline-secondary ms-3">Login</a>
             </div>
         </div>
     </nav>
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Information and Technology College / Team React Project</p>
+        <footer >
+            <p  class="fw-bold">&copy; @DateTime.Now.Year - Information and Technology College / Team React Project</p>
         </footer>
     </div>
     @Scripts.Render("~/bundles/jquery")
