@@ -5,12 +5,12 @@
 @{
     ViewBag.Title = "About";
 }
-<h2 class="bg-primary px-md-4 py-md-4 text-white">@ViewBag.Title.</h2>
+<h2 class="bg-primary px-md-4 py-md-4 text-white">@ViewBag.Title</h2>
 <h3 class="bg-secondary px-md-4  py-md-4">@ViewBag.Message</h3>
 
 <main class="body-content">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 bg-white px-3 py-3 rounded-2">
             <p>
                 "We are passionate about helping people of all ages and abilities to achieve their learning goals and life aspirations. Everything we do is geared to give you the best possible college learning experience and to enhance your future employment prospects.
             </p>
@@ -37,9 +37,9 @@
             </p>
         </div>
 
-        <div class="video col-md-6">
+        <div class="video col-md-6 bg-dark bg-opacity-50 px-3 py-3 rounded-2">
             <div class="video-settng">
-                <p>Please watch lovely video about our fantasic uni that lasted for <span id="duration"></span> min</p>
+                <p class="text-white">Please watch lovely video about our fantasic uni that lasted for <span id="duration"></span> min</p>
             </div>
             <div id="video-placeholder"></div>
             <script src="https://www.youtube.com/iframe_api"></script>
