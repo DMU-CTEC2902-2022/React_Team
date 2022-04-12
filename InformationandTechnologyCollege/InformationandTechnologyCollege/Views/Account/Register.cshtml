@@ -9,15 +9,19 @@
     @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
     {
         @Html.AntiForgeryToken()
+        //header
         <h4>Create A New Student Application.</h4>
         <hr />
         @Html.ValidationSummary("", new { @class = "text-danger" })
+        
+        //this part is where the email is entered
         <div class="form-group">
             @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
             <div class="col-md-10">
                 @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
             </div>
         </div>
+        //Password Field
         <div class="form-group">
             @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
             <div class="col-md-10">
@@ -25,12 +29,14 @@
             </div>
 
         </div>
+        //Password Confirmation Field
         <div class="form-group">
             @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
             <div class="col-md-10">
                 @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
             </div>
         </div>
+        //this part is the reister button
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" class="btn btn-default" value="Register" />
