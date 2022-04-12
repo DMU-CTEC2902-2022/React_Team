@@ -16,5 +16,14 @@ namespace InformationandTechnologyCollege.Tests.Controllers
             //test to see if it exists
             Assert.IsNotNull(AllCourses);
         }
+
+        [TestMethod]
+        public void CoruseExists()
+        {
+            //create an instance of the class we want to create
+            Course Courses = new Course();
+            //test to see if it exists
+            Assert.IsNotNull(Courses);
+        }
     }
 }

@@ -35,7 +35,7 @@ namespace InformationandTechnologyCollege.Tests.Controllers
             ViewResult result = controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.AreEqual("The College of West Anglia is focused on developing your skills and talents to prepare you for work or university", result.ViewBag.Message);
         }
 
         [TestMethod]
