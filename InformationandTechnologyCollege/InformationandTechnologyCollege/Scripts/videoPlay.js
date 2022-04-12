@@ -4,10 +4,10 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player('video-placeholder', {
         width: 600,
         height: 400,
-        videoId: '3vLDiCgTFpY',
+        videoId: '',
         playerVars: {
             color: 'white',
-            playlist: 'taJ60kskkns,FG0fTKAqZ5g'
+            playlist: '3vLDiCgTFpY'
         },
         events: {
             onReady: initialize
