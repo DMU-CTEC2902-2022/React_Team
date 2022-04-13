@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\reega\Source\Repos\React_Teamv2\InformationandTechnologyCollege\InformationandTechnologyCollege\Models\DbModels.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\reega\Source\Repos\React_Teamv2\InformationandTechnologyCollege\InformationandTechnologyCollege\Models\LoginDbModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

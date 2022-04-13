@@ -5,9 +5,11 @@
     "\\InformationandTechnologyCollege\\InformationandTechnologyCollege",
     "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\App_Data",
     "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Controllers",
+    "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Services",
+    "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Services\\Data",
     "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Views",
     "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Views\\Account"
   ],
-  "SelectedNode": "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Views\\Account\\Login.cshtml",
+  "SelectedNode": "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Services\\Data\\clsSecurityDAO.cs",
   "PreviewInSolutionExplorer": false
 }

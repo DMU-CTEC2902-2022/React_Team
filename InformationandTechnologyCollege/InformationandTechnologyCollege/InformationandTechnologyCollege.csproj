@@ -178,50 +178,39 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\AspNetRole.cs">
-      <DependentUpon>DbModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AspNetUser.cs">
-      <DependentUpon>DbModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AspNetUserClaim.cs">
-      <DependentUpon>DbModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AspNetUserLogin.cs">
-      <DependentUpon>DbModels.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\clsUserModel.cs" />
     <Compile Include="Models\Course.cs" />
-    <Compile Include="Models\C__MigrationHistory.cs">
-      <DependentUpon>DbModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DbModels.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbModels.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DbModels.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbModels.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DbModels.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DbModels.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\LoginDbModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDbModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginDbModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginDbModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDbModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\tblLogin.cs">
+      <DependentUpon>LoginDbModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Services\Business\clsSecurityService.cs" />
     <Compile Include="Services\Data\clsSecurityDAO.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\aspnet-InformationandTechnologyCollege-20220217094051.mdf" />
-    <Content Include="App_Data\aspnet-InformationandTechnologyCollege-20220217094051_log.ldf">
-      <DependentUpon>aspnet-InformationandTechnologyCollege-20220217094051.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -242,15 +231,15 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\DbModels.Context.tt">
+    <Content Include="Models\LoginDbModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DbModels.edmx</DependentUpon>
-      <LastGenOutput>DbModels.Context.cs</LastGenOutput>
+      <DependentUpon>LoginDbModel.edmx</DependentUpon>
+      <LastGenOutput>LoginDbModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\DbModels.tt">
+    <Content Include="Models\LoginDbModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DbModels.edmx</DependentUpon>
-      <LastGenOutput>DbModels.cs</LastGenOutput>
+      <DependentUpon>LoginDbModel.edmx</DependentUpon>
+      <LastGenOutput>LoginDbModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -280,13 +269,17 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <EntityDeploy Include="Models\DbModels.edmx">
+    <EntityDeploy Include="Models\LoginDbModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DbModels.Designer.cs</LastGenOutput>
+      <LastGenOutput>LoginDbModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\DbModels.edmx.diagram">
-      <DependentUpon>DbModels.edmx</DependentUpon>
+    <Content Include="Models\LoginDbModel.edmx.diagram">
+      <DependentUpon>LoginDbModel.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -343,7 +336,9 @@
     <Content Include="Views\Login\LoginSuccess.cshtml" />
     <Content Include="Views\Login\LoginFailure.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
