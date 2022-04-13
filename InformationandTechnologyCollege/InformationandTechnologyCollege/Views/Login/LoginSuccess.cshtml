@@ -7,7 +7,7 @@
 <h2>LoginSuccess</h2>
 
 <div>
-    <h4>Login Success</h4>
+    <h4>clsUserModel</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -26,8 +26,25 @@
             @Html.DisplayFor(model => model.Password)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modules)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modules)
+        </dd>
+
     </dl>
 </div>
 <p>
+    
     @Html.ActionLink("Back to List", "Index")
 </p>
