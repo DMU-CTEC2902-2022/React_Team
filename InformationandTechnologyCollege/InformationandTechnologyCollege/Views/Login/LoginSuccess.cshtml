@@ -1,0 +1,33 @@
+﻿@model InformationandTechnologyCollege.Models.clsUserModel
+
+@{
+    ViewBag.Title = "LoginSuccess";
+}
+
+<h2>LoginSuccess</h2>
+
+<div>
+    <h4>Login Success</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
