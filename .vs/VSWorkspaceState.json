@@ -1,15 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\InformationandTechnologyCollege",
-    "\\InformationandTechnologyCollege\\InformationandTechnologyCollege",
-    "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\App_Data",
-    "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Controllers",
-    "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Services",
-    "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Services\\Data",
-    "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Views",
-    "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Views\\Account"
+    "\\InformationandTechnologyCollege"
   ],
-  "SelectedNode": "\\InformationandTechnologyCollege\\InformationandTechnologyCollege\\Services\\Data\\clsSecurityDAO.cs",
+  "SelectedNode": "\\InformationandTechnologyCollege\\InformationandTechnologyCollege.sln",
   "PreviewInSolutionExplorer": false
 }
